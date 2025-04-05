@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Layout styles */
+.layout-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.layout-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.layout-footer {
+  padding: 1rem;
+  background: #eee;
+  text-align: center;
+}
